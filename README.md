@@ -83,7 +83,7 @@ Create a `.env` file in both `/server` and `/client` directories.
 
 ```
 PORT=5000
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/database
+
 JWT_SECRET=your_jwt_secret
 ```
 
