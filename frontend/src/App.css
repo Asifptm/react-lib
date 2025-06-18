@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fa;
+  color: #222;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.07);
+}
+
+.sidebar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  color: #61dafb;
+}
+
+.sidebar nav a {
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar nav a:hover, .sidebar nav a.active {
+  color: #fff;
+  background: rgba(97,218,251,0.12);
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f4f6fa;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e3e6eb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.title {
+  margin-left: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #232526;
+  letter-spacing: 0.5px;
+}
+
+.content {
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 16px;
+  margin: 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  min-height: 0;
+  flex: 1;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stats .stat-card {
+  background: linear-gradient(135deg, #61dafb 0%, #1e90ff 100%);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(30,144,255,0.10);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+  transition: transform 0.15s;
+}
+
+.stats .stat-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(30,144,255,0.18);
+}
+
+.stats .stat-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  opacity: 0.85;
+}
+
+.stats .stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

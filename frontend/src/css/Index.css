@@ -1,0 +1,163 @@
+
+.index-page {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #c7d2fe 100%);
+    color: #000000;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.index-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  background: none;
+  border: 2px solid #000;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Main Section */
+.index-main {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.main-subtitle {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-btn {
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn.primary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.cta-btn.primary:hover {
+  background-color: #222;
+}
+
+.cta-btn.outline {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.cta-btn.outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Feather Icons */
+.btn-icon {
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+}

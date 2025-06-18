@@ -1,0 +1,110 @@
+.admin-login-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.admin-login-left, .admin-login-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin-login-left {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.admin-login-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.admin-illustration {
+  max-width: 80%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.admin-login-right {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-login-form {
+  width: 100%;
+  max-width: 400px;
+  background: #f9f9f9;
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 22px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-icon, .toggle-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.input-icon {
+  left: 12px;
+}
+
+.toggle-icon {
+  right: 12px;
+  cursor: pointer;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.admin-login-button {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}

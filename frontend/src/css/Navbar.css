@@ -1,0 +1,63 @@
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --hover-bg: #1a1a1a;
+  --active-bg: #ffffff;
+  --active-text: #000000;
+  --transition: all 0.3s ease;
+  --icon-color: #ffffff;
+  --icon-hover: #cccccc;
+  --icon-active: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 14px 24px;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.05);
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.navbar a:hover {
+  background-color: var(--hover-bg);
+  transform: scale(1.05);
+}
+
+.navbar a span.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  transition: var(--transition);
+}
+
+.navbar a:hover span.icon {
+  color: var(--icon-hover);
+}
+
+.navbar .active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+  font-weight: 600;
+}
+
+.navbar .active span.icon {
+  color: var(--icon-active);
+}
